@@ -5,7 +5,7 @@ This bug is really, really easy to replicate. When you create a scene and export
 Here is a visual of the resulting scene, running, with 'Visible Collision Shapes' turned on from the 'Debug Menu':
 ![running](https://github.com/z4rdoz/Godot-TilemapBug/blob/master/screenshots/running.png)          
 
-On the left is the bad tileset, where I changed the StaticBody2D size, and on the right is where I left it alone. Note, it doesn't appear to matter whether I use CollisionPolygon or CollisionShape2D. I noticed that when people were talking about this, they were saying they used the latter, so I thought I'd show an example of the former to demonstrate that it's a problem for both. For reference, this is the scene being run:
+On the left is the bad tileset, where I changed the StaticBody2D size, and on the right is where I left it alone. To be clear, I set the collision polygon to the corners of the block tile. Note, it doesn't appear to matter whether I use CollisionPolygon or CollisionShape2D. I noticed that when people were talking about this, they were saying they used the latter, so I thought I'd show an example of the former to demonstrate that it's a problem for both. For reference, this is the scene being run:
 ![scene](https://github.com/z4rdoz/Godot-TilemapBug/blob/master/screenshots/scene.PNG)
 
 This is the scene that generated the bad tileset/the one on the left:
